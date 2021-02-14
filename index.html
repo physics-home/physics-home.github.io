@@ -1,0 +1,89 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN" id="bgimg">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width" />
+<title>Mps home</title>
+<meta name="description" content="Mps home">
+<meta name="keywords" content="Mps home">
+<link rel="icon" href="" mce_href="/dir/favicon.ico" type="image/x-icon">
+<link rel="stylesheet" type="text/css" href="https://www.bootcss.com/p/buttons/css/buttons.css">
+<link rel="stylesheet" type="text/css" href="https://www.bootcss.com/p/buttons/css/showcase.css">
+<link type="text/css" rel="stylesheet" href="style.css" />
+<meta name="referrer" content="no-referrer" />
+<div style="text-align:center;clear:both">
+</div>
+<div class="tooltips">
+<span>
+<iframe src="https://music.163.com/outchain/player?type=0&id=6615326191&auto=1&height=280" width=330 height="300" frameborder="no" marginwidth="0" marginheight="0"></iframe>
+</span>
+</div>
+</head>
+<body>
+<div id="top">
+<main id="top_main">
+<div id="top_logo"><img src="src/tx2.png" onmouseover="mouseOver()" onmouseout="mouseOut()" id="mainimg"></div>
+<div id="top_title"><img id="top_title01" alt="" src="src/toptitle01.png">
+<br class="top_hr_style01">
+</div><br><br>
+<div class="showcase-examples l-over l-center">
+  <a href="https://blog.m-home.top" title="网页版说说..." class="button button-rounded button-plain button-small-caps button-border" target="_blank">博客blog</a>
+  <a href="https://math-m.gitee.io/" title="前往施工现场" class="button button-rounded button-plain button-small-caps button-border" target="_blank">数学阁（填坑中）</a>
+  <a href="https://www.zhihu.com/people/wu-li-zz-4" title="一个蒟蒻的知乎主页" class="button button-rounded button-plain button-small-caps button-border"target="_blank" >知乎</a>
+  <a href="https://gitee.com/physics-m/tubian/raw/master/qrcode_1613275767539.jpg" title="我的二维码" class="button button-rounded button-plain button-small-caps button-border" target="_blank" >QQ</a>
+  <a href="https://gitee.com/physics-m/tubian/raw/master/mmqrcode1613275852754.png" title="微信二维码" class="button button-rounded button-plain button-small-caps button-border" target="_blank" >WeChat</a>
+  <a href="https://404.com" title="前往处女作" class="button button-rounded button-plain button-small-caps button-border" target="_blank" >早期的个人博客</a>
+</div>
+</main>
+</div>
+<footer id="top_footer">
+<span id="top_copyright">
+<hr class="top_hr_style02">
+<a href="https://physics-home.github.io">你来了！！！</a>
+<hr class="top_hr_style02">
+<a href="https://physics-home.github.io">马鹏森的主页</a> copyright © 2021 All Rights Reserved. <a href=""></a>
+</span>
+</footer>
+</body>
+<script>
+	function mouseOver(){
+		document.getElementById("mainimg").src="src/tx.png";//鼠标悬浮时的旋转图标
+	}
+	function mouseOut()
+	{
+		document.getElementById('mainimg').src ="src/tx2.png"//默认的旋转图标
+	}
+</script>
+<<script type="text/javascript">
+	function change(randomBgIndex){
+	    randomBgIndex = randomBgIndex % 15;
+		var bodyBgs = [];
+bodyBgs[0] = "https://gitee.com/physics-m/tubian/raw/master/背景!!_39578544_p70.jpg";
+bodyBgs[1] = "https://gitee.com/physics-m/tubian/raw/master/背景!!_39578544_p69.jpg";
+bodyBgs[2] = "https://gitee.com/physics-m/tubian/raw/master/背景!!_39578544_p7.jpg";
+bodyBgs[3] = "https://gitee.com/physics-m/tubian/raw/master/背景!!_39578544_p15.jpg";
+bodyBgs[4] = "https://gitee.com/physics-m/tubian/raw/master/背景!!_39578544_p16.jpg";
+bodyBgs[5] = "https://gitee.com/physics-m/tubian/raw/master/背景!!_39578544_p93.jpg";
+bodyBgs[6] = "https://gitee.com/physics-m/tubian/raw/master/背景!!_39578544_p94.jpg";
+bodyBgs[7] = "https://gitee.com/physics-m/tubian/raw/master/背景!!_39578544_p95.jpg";
+bodyBgs[8] = "https://gitee.com/physics-m/tubian/raw/master/背景!!_39578544_p14.jpg";		
+bodyBgs[9] = "https://gitee.com/physics-m/tubian/raw/master/背景!!_39578544_p13.jpg";
+bodyBgs[10] = "https://gitee.com/physics-m/tubian/raw/master/背景!!_39578544_p12.jpg";
+bodyBgs[11] = "https://gitee.com/physics-m/tubian/raw/master/背景!!_39578544_p67.jpg";
+bodyBgs[12] = "https://gitee.com/physics-m/tubian/raw/master/背景!!_39578544_p68.jpg";
+bodyBgs[13] = "https://gitee.com/physics-m/tubian/raw/master/背景!!_39578544_p87.jpg";
+bodyBgs[14] = "https://gitee.com/physics-m/tubian/raw/master/背景!!_39578544_p82.jpg";
+bodyBgs[15] = "https://gitee.com/physics-m/tubian/raw/master/背景!!_39578544_p20.jpg";
+
+
+		var img1= document.getElementById('bgimg');
+		img1.style.backgroundImage='url(' + bodyBgs[randomBgIndex] + ')';
+	        window.setTimeout(function(){change(randomBgIndex + 1)},8000);
+	}
+	change(0);
+</script>
+<script type="text/javascript" src="src/snow.min.js"></script>        
+<script type="text/javascript">
+createSnow('src/', 60);
+</script>
+</html>
